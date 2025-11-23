@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 #define N 5
 
 void bubble_sort(int size, int arr[size]) {
