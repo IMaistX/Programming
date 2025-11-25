@@ -1,36 +1,37 @@
 #include <stdio.h>
-#define N 5
-//
-void bubble_sort(int size, int arr[size]) {
-    for (int i = 0; i < size; i++) {
-        for (int j = 0; j < size - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) { 
-                int tmp = arr[j];
+
+// Ваша существующая функция сортировки
+void sort(int arr[], int n) {
+    // код сортировки из предыдущих шагов
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j];
                 arr[j] = arr[j + 1];
-                arr[j + 1] = tmp;
+                arr[j + 1] = temp;
             }
         }
     }
 }
 
-void print_array(int size, int array[size]) {
-    for (int i = 0; i < size; i++) {
-        printf("%d ", array[i]);
+// Добавленная функция main()
+int main() {
+    int a[] = {4, 2, 0, 8, 1, 9};
+    int n = sizeof(a) / sizeof(a[0]);
+    
+    printf("Исходный массив: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", a[i]);
     }
     printf("\n");
-}
-
-int main() {
-
-    int array[N] = {6, -5, 3, 77, 4};
-    // Выводим изначальный массив
-    print_array(N, array);
-
-    // Сортируем по возрастанию
-    bubble_sort(N, array);
-
-    // Вот они все, слева-направо..
-    print_array(N, array);
-
+    
+    sort(a, n);
+    
+    printf("Отсортированный массив: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", a[i]);
+    }
+    printf("\n");
+    
     return 0;
 }
