@@ -4,7 +4,7 @@
 Git log вывел коммит с хэшем, автора и дату.
 После создания файла. В Git status нас просит добавить файл в область stage.
 После добавления в stage, git status изменился на Changes not staged for commit: modified: sort.c.
- ![alt text](image-1.png)
+ ![alt text](lab9/image-1.png)
  ![alt text](image-2.png)
  ![alt text](image-3.png)
 Журнал Log показывает все коммиты.
