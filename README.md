@@ -1,4 +1,4 @@
-### :man_technologist: Programming :
+### <img src="https://media.tenor.com/JwP63tDxTfMAAAAi/teehee-smile.gif" width="30"> Programming :
 
 ---
 
