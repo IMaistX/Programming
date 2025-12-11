@@ -6,7 +6,7 @@
 
 <img src="https://media.tenor.com/ZjlFHIbzDowAAAAM/coding-programming.gif" width="400">
 
-### :writing_hand: ЛАБЫ :
+### <img src="https://media.tenor.com/2gi5ucI5THgAAAAi/usagyuuun-note.gif" width="30"> ЛАБЫ :
 
 ---
 
