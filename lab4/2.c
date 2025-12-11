@@ -1,12 +1,15 @@
+// 1 вар
 #include <stdio.h>
+
 int main() {
     int a;
-    printf("Введите чило: ");
+    printf("Введите a: ");
     scanf("%d", &a);
-    int a2;
-    for (int i = 0; i < sizeof(a) * 8; i++) {
-        printf("%o", (a & 7));
-        a = a >> 3;
+    int count = 0;
+    for (int i = 0; i < 32; i++) {
+        count += a & 1;
+        a = a >> 1;
     }
-printf("\n");
+    printf("Количество еденичных битов в числе a: %d\n", count);
+    printf("Количество нулевых битов в числе a: %d\n", 32 - count);
 }
