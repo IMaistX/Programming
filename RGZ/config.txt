@@ -1,2 +1,2 @@
-TEXT=Hello World
-KEY=BANANA
+TEXT=qwerty123
+KEY=secretqwert
